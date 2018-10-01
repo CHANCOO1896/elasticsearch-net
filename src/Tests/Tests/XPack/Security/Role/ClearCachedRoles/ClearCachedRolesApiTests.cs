@@ -13,7 +13,6 @@ using Xunit;
 
 namespace Tests.XPack.Security.Role.ClearCachedRoles
 {
-	[SkipVersion("<2.3.0", "")]
 	public class ClearCachedRolesApiTests : ApiIntegrationTestBase<XPackCluster, IClearCachedRolesResponse, IClearCachedRolesRequest, ClearCachedRolesDescriptor, ClearCachedRolesRequest>
 	{
 		public ClearCachedRolesApiTests(XPackCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

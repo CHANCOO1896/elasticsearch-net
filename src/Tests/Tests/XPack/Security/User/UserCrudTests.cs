@@ -11,7 +11,6 @@ using Xunit;
 
 namespace Tests.XPack.Security.User
 {
-	[SkipVersion("<2.3.0", "")]
 	public class UserCrudTests
 		: CrudTestBase<XPackCluster, IPutUserResponse, IGetUserResponse, IPutUserResponse, IDeleteUserResponse>
 	{

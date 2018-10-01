@@ -11,7 +11,6 @@ namespace Tests.Mapping.Types.Core.Range.DateRange
 		public Nest.DateRange Range { get; set; }
 	}
 
-	[SkipVersion("<5.2.0", "dedicated range types is a new 5.2.0 feature")]
 	public class DateRangeAttributeTests : AttributeTestsBase<DateRangeTest>
 	{
 		protected override object ExpectJson => new

@@ -17,7 +17,6 @@ using static Tests.Domain.Helpers.TestValueHelper;
 
 namespace Tests.Search.MultiSearch
 {
-	[SkipVersion(">5.0.0-alpha1", "format of percolate query changed.")]
 	public class MultiSearchApiTests : ApiIntegrationTestBase<ReadOnlyCluster, IMultiSearchResponse, IMultiSearchRequest, MultiSearchDescriptor, MultiSearchRequest>
 	{
 		public MultiSearchApiTests(ReadOnlyCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

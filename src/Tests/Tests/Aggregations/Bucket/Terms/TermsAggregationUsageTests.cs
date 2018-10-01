@@ -315,7 +315,6 @@ namespace Tests.Aggregations.Bucket.Terms
 	 * Partitioning is available only in Elasticsearch 5.2.0+
 	 * --
 	 */
-	[SkipVersion("<5.2.0", "Partitioning term aggregations responses is a new feature in 5.2.0")]
 	public class PartitionTermsAggregationUsageTests : AggregationUsageTestBase
 	{
 		public PartitionTermsAggregationUsageTests(ReadOnlyCluster i, EndpointUsage usage) : base(i, usage) { }

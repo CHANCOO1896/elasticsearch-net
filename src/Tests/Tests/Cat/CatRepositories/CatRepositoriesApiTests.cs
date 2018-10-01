@@ -14,7 +14,6 @@ using Xunit;
 
 namespace Tests.Cat.CatRepositories
 {
-	[SkipVersion("<2.1.0", "")]
 	public class CatRepositoriesApiTests : ApiIntegrationTestBase<IntrusiveOperationCluster, ICatResponse<CatRepositoriesRecord>, ICatRepositoriesRequest, CatRepositoriesDescriptor, CatRepositoriesRequest>
 	{
 		private static readonly string RepositoryName = RandomString();

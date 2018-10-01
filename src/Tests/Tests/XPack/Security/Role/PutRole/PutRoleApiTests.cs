@@ -15,7 +15,6 @@ using static Nest.Infer;
 
 namespace Tests.XPack.Security.Role.PutRole
 {
-	[SkipVersion("<2.3.0", "")]
 	public class PutRoleApiTests : ApiIntegrationTestBase<XPackCluster, IPutRoleResponse, IPutRoleRequest, PutRoleDescriptor, PutRoleRequest>
 	{
 		public PutRoleApiTests(XPackCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

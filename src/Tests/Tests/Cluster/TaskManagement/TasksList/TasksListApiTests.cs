@@ -66,7 +66,6 @@ namespace Tests.Cluster.TaskManagement.TasksList
 		}
 	}
 
-	[SkipVersion("<2.3.0", "")]
 	public class TasksListDetailedApiTests : ApiIntegrationTestBase<IntrusiveOperationCluster, IListTasksResponse, IListTasksRequest, ListTasksDescriptor, ListTasksRequest>
 	{
 		private static TaskId _taskId = new TaskId("fakeid:1");

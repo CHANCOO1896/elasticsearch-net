@@ -13,7 +13,6 @@ using Xunit;
 
 namespace Tests.XPack.Security.User.PutUser
 {
-	[SkipVersion("<2.3.0", "")]
 	public class PutUserApiTests : ApiIntegrationTestBase<XPackCluster, IPutUserResponse, IPutUserRequest, PutUserDescriptor, PutUserRequest>
 	{
 		public PutUserApiTests(XPackCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

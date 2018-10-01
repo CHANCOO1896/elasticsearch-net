@@ -9,7 +9,6 @@ using Tests.Framework.ManagedElasticsearch.Clusters;
 
 namespace Tests.Mapping.Types.Core.Range.DoubleRange
 {
-	[SkipVersion("<5.2.0", "dedicated range types is a new 5.2.0 feature")]
 	public class DoubleRangePropertyTests : PropertyTestsBase
 	{
 		public DoubleRangePropertyTests(WritableCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

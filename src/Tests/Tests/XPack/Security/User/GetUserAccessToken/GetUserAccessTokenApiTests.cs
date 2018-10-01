@@ -11,7 +11,6 @@ using static Elastic.Managed.Ephemeral.ClusterAuthentication;
 
 namespace Tests.XPack.Security.User.GetUserAccessToken
 {
-	[SkipVersion("<5.5.0", "")]
 	public class GetUserAccessTokenApiTests : ApiIntegrationTestBase<XPackCluster, IGetUserAccessTokenResponse, IGetUserAccessTokenRequest,
 		GetUserAccessTokenDescriptor, GetUserAccessTokenRequest>
 	{

@@ -14,7 +14,6 @@ using static Nest.Infer;
 
 namespace Tests.Document.Multiple.ReindexOnServer
 {
-	[SkipVersion("<2.3.0", "")]
 	public class ReindexOnServerInvalidApiTests : ReindexOnServerApiTests
 	{
 		public ReindexOnServerInvalidApiTests(IntrusiveOperationCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

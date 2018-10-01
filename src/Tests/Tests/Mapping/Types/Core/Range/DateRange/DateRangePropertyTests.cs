@@ -9,7 +9,6 @@ using Tests.Framework.ManagedElasticsearch.Clusters;
 
 namespace Tests.Mapping.Types.Core.Range.DateRange
 {
-	[SkipVersion("<5.2.0", "dedicated range types is a new 5.2.0 feature")]
 	public class DateRangePropertyTests : PropertyTestsBase
 	{
 		private DateTime _nullValue = new DateTime(2000, 1, 1, 1, 1, 1, 1, DateTimeKind.Utc);

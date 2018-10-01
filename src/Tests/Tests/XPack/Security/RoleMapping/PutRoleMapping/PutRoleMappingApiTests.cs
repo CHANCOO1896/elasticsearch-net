@@ -13,7 +13,6 @@ using static Nest.Infer;
 
 namespace Tests.XPack.Security.RoleMapping.PutRoleMapping
 {
-	[SkipVersion("<5.5.0", "")]
 	public class PutRoleMappingApiTests : ApiIntegrationTestBase<XPackCluster, IPutRoleMappingResponse, IPutRoleMappingRequest,
 		PutRoleMappingDescriptor, PutRoleMappingRequest>
 	{

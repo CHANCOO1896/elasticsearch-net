@@ -6,7 +6,6 @@ using Tests.Framework;
 
 namespace Tests.IndexModules.IndexSettings.Settings
 {
-	[SkipVersion("<=5.2.0", "setting introduced in 5.3.0")]
 	public class RoutingPartitionSizeIndexSettingsUsage : PromiseUsageTestBase<IIndexSettings, IndexSettingsDescriptor, Nest.IndexSettings>
 	{
 		protected override object ExpectJson => new Dictionary<string, object>

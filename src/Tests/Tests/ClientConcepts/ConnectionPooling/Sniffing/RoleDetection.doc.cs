@@ -377,7 +377,6 @@ namespace Tests.ClientConcepts.ConnectionPooling.Sniffing
 		}
 
 		[I]
-		[SkipVersion("5.0.0-alpha3", "Broken in this version. See https://github.com/elastic/elasticsearch/issues/18794")]
 		public async Task SniffPicksUpRoles()
 		{
 			var node = SniffAndReturnNode();

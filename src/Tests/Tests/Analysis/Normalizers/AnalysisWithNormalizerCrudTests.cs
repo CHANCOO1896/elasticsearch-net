@@ -1,18 +1,11 @@
-﻿using System.Linq;
-using Elastic.Xunit.XunitPlumbing;
-using FluentAssertions;
-using Nest;
+﻿using Nest;
 using Tests.Core.ManagedElasticsearch.Clusters;
-using Tests.Framework;
 using Tests.Framework.Integration;
-using Tests.Framework.ManagedElasticsearch.Clusters;
-using Xunit;
 using static Tests.Framework.Promisify;
 
 namespace Tests.Analysis
 {
 
-	[SkipVersion("<5.2.0", "Normalizers are a new 5.2.0 feature")]
 	public class AnalysisWithNormalizerCrudTests : AnalysisCrudTests
 	{
 		public AnalysisWithNormalizerCrudTests(WritableCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

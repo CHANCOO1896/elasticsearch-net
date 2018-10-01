@@ -14,7 +14,6 @@ using Xunit;
 
 namespace Tests.XPack.Security.ClearCachedRealms
 {
-	[SkipVersion("<2.3.0", "")]
 	public class ClearCachedRealmsApiTests : ApiIntegrationTestBase<XPackCluster, IClearCachedRealmsResponse, IClearCachedRealmsRequest, ClearCachedRealmsDescriptor, ClearCachedRealmsRequest>
 	{
 		public ClearCachedRealmsApiTests(XPackCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

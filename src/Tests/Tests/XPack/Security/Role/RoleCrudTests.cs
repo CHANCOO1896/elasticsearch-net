@@ -13,7 +13,6 @@ using Xunit;
 
 namespace Tests.XPack.Security.Role
 {
-	[SkipVersion("<2.3.0", "")]
 	public class RoleCrudTests
 		: CrudTestBase<XPackCluster, IPutRoleResponse, IGetRoleResponse, IPutRoleResponse, IDeleteRoleResponse>
 	{

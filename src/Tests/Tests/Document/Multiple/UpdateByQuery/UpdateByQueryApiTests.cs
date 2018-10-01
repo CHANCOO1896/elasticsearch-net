@@ -14,7 +14,6 @@ using static Nest.Infer;
 
 namespace Tests.Document.Multiple.UpdateByQuery
 {
-	[SkipVersion("<2.3.0", "")]
 	public class UpdateByQueryApiTests : ApiIntegrationTestBase<IntrusiveOperationCluster, IUpdateByQueryResponse, IUpdateByQueryRequest, UpdateByQueryDescriptor<UpdateByQueryApiTests.Test>, UpdateByQueryRequest>
 	{
 		public class Test
@@ -105,7 +104,6 @@ namespace Tests.Document.Multiple.UpdateByQuery
 		}
 	}
 
-	[SkipVersion("<2.3.0", "")]
 	public class UpdateByQueryWaitForCompletionApiTests : UpdateByQueryApiTests
 	{
 		public UpdateByQueryWaitForCompletionApiTests(IntrusiveOperationCluster cluster, EndpointUsage usage) : base(cluster, usage) { }
@@ -134,7 +132,6 @@ namespace Tests.Document.Multiple.UpdateByQuery
 		}
 	}
 
-	[SkipVersion("<2.3.0", "")]
 	public class UpdateByQueryWithFailuresApiTests : UpdateByQueryApiTests
 	{
 		public UpdateByQueryWithFailuresApiTests(IntrusiveOperationCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

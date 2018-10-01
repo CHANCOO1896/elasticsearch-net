@@ -12,7 +12,6 @@ using static Elastic.Managed.Ephemeral.ClusterAuthentication;
 
 namespace Tests.XPack.Security.Authenticate
 {
-	[SkipVersion("<2.3.0", "")]
 	public class AuthenticateApiTests : ApiIntegrationTestBase<XPackCluster, IAuthenticateResponse, IAuthenticateRequest, AuthenticateDescriptor, AuthenticateRequest>
 	{
 		public AuthenticateApiTests(XPackCluster cluster, EndpointUsage usage) : base(cluster, usage) { }
@@ -37,7 +36,6 @@ namespace Tests.XPack.Security.Authenticate
 		}
 	}
 
-	[SkipVersion("<2.3.0", "")]
 	public class AuthenticateRequestConfigurationApiTests : AuthenticateApiTests
 	{
 		public AuthenticateRequestConfigurationApiTests(XPackCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

@@ -13,7 +13,6 @@ using Xunit;
 
 namespace Tests.XPack.Security.RoleMapping
 {
-	[SkipVersion("<5.5.0", "Does not exist in earlier versions")]
 	public class RoleMappingCrudTests
 		: CrudTestBase<XPackCluster, IPutRoleMappingResponse, IGetRoleMappingResponse, IPutRoleMappingResponse, IDeleteRoleMappingResponse>
 	{

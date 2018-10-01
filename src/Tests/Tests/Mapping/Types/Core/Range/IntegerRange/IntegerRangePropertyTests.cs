@@ -9,7 +9,6 @@ using Tests.Framework.ManagedElasticsearch.Clusters;
 
 namespace Tests.Mapping.Types.Core.Range.IntegerRange
 {
-	[SkipVersion("<5.2.0", "dedicated range types is a new 5.2.0 feature")]
 	public class IntegerRangePropertyTests : PropertyTestsBase
 	{
 		public IntegerRangePropertyTests(WritableCluster cluster, EndpointUsage usage) : base(cluster, usage) { }

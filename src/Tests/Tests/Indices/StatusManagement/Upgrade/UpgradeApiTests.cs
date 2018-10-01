@@ -11,7 +11,6 @@ using static Nest.Infer;
 
 namespace Tests.Indices.StatusManagement.Upgrade
 {
-	[SkipVersion("<=5.0.0", "AllowNoIndices() only available from 5.0.1 onwards")]
 	public class UpgradeApiTests
 		: ApiIntegrationAgainstNewIndexTestBase
 			<IntrusiveOperationCluster, IUpgradeResponse, IUpgradeRequest, UpgradeDescriptor, UpgradeRequest>

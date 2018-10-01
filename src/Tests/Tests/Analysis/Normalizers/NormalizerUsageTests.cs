@@ -8,7 +8,6 @@ namespace Tests.Analysis.Normalizers
 	/**
 	 */
 
-	[SkipVersion("<5.2.0", "Normalizers are a new 5.2.0 feature")]
 	public class NormalizerUsageTests : PromiseUsageTestBase<IIndexSettings, IndexSettingsDescriptor, IndexSettings>
 	{
 		protected override object ExpectJson => new
